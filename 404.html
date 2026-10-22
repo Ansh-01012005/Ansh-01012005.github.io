@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>404 — Page not found | Ansh Agrawal</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #06080f;
+      --text: #eef1f8;
+      --muted: #98a2b8;
+      --muted-2: #6c7690;
+      --accent: #7c6cff;
+      --accent-2: #2ee6c8;
+      --border: rgba(255, 255, 255, 0.09);
+      --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+      --sans: "Inter", system-ui, sans-serif;
+      --display: "Space Grotesk", "Inter", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(800px 500px at 75% 0%, rgba(124, 108, 255, 0.18), transparent 62%),
+        radial-gradient(700px 500px at 10% 100%, rgba(46, 230, 200, 0.1), transparent 60%),
+        var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000, transparent 75%);
+    }
+
+    main {
+      position: relative;
+      width: 100%;
+      max-width: 620px;
+      padding: 40px 8px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 42px;
+      color: var(--text);
+      text-decoration: none;
+      font-family: var(--display);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #04100f;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .code {
+      margin: 0 0 12px;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 15ch;
+      font-family: var(--display);
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+    }
+
+    h1 span {
+      background: linear-gradient(100deg, #a596ff, #6ea8ff 50%, #2ee6c8);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .lead {
+      max-width: 48ch;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.86rem;
+      font-weight: 600;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover { border-color: var(--accent); transform: translateY(-2px); }
+
+    .btn-primary {
+      border-color: transparent;
+      background: linear-gradient(115deg, #8c7cff, #6c8dff 48%, #2ee6c8);
+      color: #04100f;
+    }
+
+    .note {
+      margin-top: 44px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.03em;
+      color: var(--muted-2);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="/">
+      <span class="mark" aria-hidden="true">AA</span>
+      Ansh Agrawal
+    </a>
+
+    <p class="code">Error 404</p>
+    <h1>This page went <span>off-distribution.</span></h1>
+    <p class="lead">
+      The URL you followed doesn't exist here. The good news: the useful part of
+      the site is still exactly where you left it.
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Back to the portfolio</a>
+      <a class="btn" href="mailto:anshagrawal887@gmail.com">Get in touch</a>
+    </div>
+
+    <p class="note">ansh-01012005.github.io</p>
+  </main>
+</body>
+</html>

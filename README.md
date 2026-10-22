@@ -1,29 +1,40 @@
 # Ansh Agrawal — Portfolio
 
-Personal portfolio for Ansh Agrawal, a final-year B.Tech CSE (AI/ML) student at UPES Dehradun.
+Live site: **https://ansh-01012005.github.io/**
 
-**Live site:** https://ansh-01012005.github.io/
+A single-page portfolio for Ansh Agrawal, a final-year B.Tech CSE (AI/ML) student at UPES Dehradun. It brings together applied machine learning projects, internship experience, skills, education, and contact details.
 
-## Stack
+## Built with
 
-Static HTML, CSS, and vanilla JavaScript — no build step or dependencies.
+- Semantic HTML5
+- Hand-written CSS (design tokens, responsive layout, dark/light themes)
+- Vanilla JavaScript (typewriter terminal, scroll reveals, animated counters, project visuals, mobile navigation)
+- No frameworks, no build step, no trackers
 
-- `index.html` — page structure and content
-- `styles.css` — design system, layout, responsiveness, motion
-- `script.js` — theme toggle, mobile nav, scroll effects, counters, copy-email
-- `favicon.svg` — site icon
-- `Ansh_Agrawal_Resume.pdf` — downloadable resume
-
-## Local preview
-
-Open `index.html` directly, or serve the folder:
+## Run locally
 
 ```bash
-python -m http.server 8080
+python -m http.server 4173
 ```
 
-Then visit http://localhost:8080/.
+Then open <http://127.0.0.1:4173/>.
 
 ## Deployment
 
-Hosted with GitHub Pages from the `main` branch root. Every push to `main` redeploys the site automatically.
+The site is published with GitHub Pages from the `main` branch root of this repository.
+
+## Structure
+
+```text
+index.html               Single-page site
+styles.css               Design system and responsive styles
+script.js                Interactions and animations
+favicon.svg              Site icon
+og-image.png             Social sharing preview
+Ansh_Agrawal_Resume.pdf  Downloadable resume
+404.html                 Custom not-found page
+```
+
+---
+
+Designed and built from scratch.
