@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ansh Agrawal — AI/ML Engineer &amp; B.Tech CSE Student</title>
+  <meta name="description" content="Portfolio of Ansh Agrawal — final-year B.Tech CSE (AI/ML) student at UPES Dehradun. Applied machine learning, reinforcement learning, and explainable AI projects." />
+  <meta name="author" content="Ansh Agrawal" />
+
+  <meta name="theme-color" content="#06080f" id="themeColor" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ansh Agrawal — AI/ML Engineer &amp; B.Tech CSE Student" />
+  <meta property="og:description" content="Applied ML, reinforcement learning, and explainable AI. Building models that turn data into decisions." />
+  <meta property="og:site_name" content="Ansh Agrawal — Portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    // Apply saved theme before first paint to avoid a flash.
+    try {
+      var savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (e) {}
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <noscript>
+    <style>
+      .reveal { opacity: 1; transform: none; }
+      .rank-bar,
+      .feature-bar .bar i { transform: none; }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ansh Agrawal",
+      "email": "mailto:anshagrawal887@gmail.com",
+      "telephone": "+91-8839289167",
+      "jobTitle": "AI/ML Engineer",
+      "description": "Final-year B.Tech CSE (AI/ML) student at UPES Dehradun, focused on applied machine learning, reinforcement learning, and explainable AI.",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "UPES, Dehradun"
+      },
+      "knowsAbout": [
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Explainable AI",
+        "Credit Risk Modelling",
+        "Recommender Systems",
+        "Python",
+        "SQL"
+      ],
+      "sameAs": [
+        "https://github.com/Ansh-01012005",
+        "https://linkedin.com/in/ansh-agrawal01"
+      ]
+    }
+  </script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="pointer-glow" id="pointerGlow" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="header">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">AA</span>
+        <span class="brand-text">Ansh Agrawal</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn-primary btn-sm nav-resume" href="Ansh_Agrawal_Resume.pdf" download>
+          Resume
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill reveal">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to AI/ML internships &amp; 2027 new-grad roles
+          </p>
+
+          <h1 class="reveal" style="--d: 70ms">
+            I build ML systems that turn raw data into
+            <span class="grad-text">real decisions.</span>
+          </h1>
+
+          <p class="hero-lead reveal" style="--d: 140ms">
+            Final-year B.Tech student in Computer Science &amp; Engineering (AI/ML) at UPES,
+            Dehradun. I ship end-to-end machine learning — from feature engineering and
+            benchmarking to interfaces that non-technical teams actually use.
+          </p>
+
+          <div class="hero-actions reveal" style="--d: 210ms">
+            <a class="btn btn-primary" href="#projects">
+              Explore my work
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="Ansh_Agrawal_Resume.pdf" download>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download resume
+            </a>
+          </div>
+
+          <div class="hero-socials reveal" style="--d: 280ms">
+            <a href="https://github.com/Ansh-01012005" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.8a5.3 5.3 0 0 0-1.4-3.7 5 5 0 0 0-.1-3.7s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.4 0C6.2 1.5 5.1 1.8 5.1 1.8a5 5 0 0 0-.1 3.7A5.3 5.3 0 0 0 3.6 9.2c0 5.3 3.1 6.5 6.1 6.8a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/ansh-agrawal01" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v1.5A6 6 0 0 1 16 8Z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="mailto:anshagrawal887@gmail.com" aria-label="Send an email">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+            <span class="socials-rule" aria-hidden="true"></span>
+            <span class="socials-note">Dehradun, India</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d: 180ms">
+          <div class="glow glow-a" aria-hidden="true"></div>
+          <div class="glow glow-b" aria-hidden="true"></div>
+
+          <div class="terminal" aria-label="Terminal with a quick profile summary">
+            <div class="terminal-bar">
+              <span class="terminal-dot red" aria-hidden="true"></span>
+              <span class="terminal-dot amber" aria-hidden="true"></span>
+              <span class="terminal-dot green" aria-hidden="true"></span>
+              <span class="terminal-title">ansh@portfolio — zsh</span>
+            </div>
+            <div class="terminal-body" id="termBody">
+              <noscript>
+                <pre class="term-fallback">➜ whoami
+ansh_agrawal — B.Tech CSE (AI/ML), UPES '27
+➜ cat focus.txt
+applied ML · reinforcement learning · explainability
+➜ python model.py --task credit-risk
+ROC-AUC 0.769 · lift 1.90x · SHAP ready ✓</pre>
+              </noscript>
+            </div>
+          </div>
+
+          <div class="hero-note">
+            <span class="note-kicker"><span class="live-dot teal"></span> Now</span>
+            <p>Final year at UPES · exploring agentic recommenders and explainable risk models.</p>
+          </div>
+
+          <div class="float-chip chip-a" aria-hidden="true"><span class="chip-dot"></span> 1.90× lift</div>
+          <div class="float-chip chip-b" aria-hidden="true"><span class="chip-dot teal"></span> 97.3% recall</div>
+          <div class="float-chip chip-c" aria-hidden="true"><span class="chip-dot pink"></span> 300K+ records</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-stats reveal" style="--d: 340ms">
+          <div class="stat">
+            <span class="stat-value" data-count="8.09" data-decimals="2">8.09</span>
+            <span class="stat-label">CGPA at UPES</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="1.90" data-decimals="2" data-suffix="×">1.90×</span>
+            <span class="stat-label">Credit-risk lift over baseline</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="97.3" data-decimals="1" data-suffix="%">97.3%</span>
+            <span class="stat-label">Water-quality recall</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value" data-count="300" data-suffix="K+">300K+</span>
+            <span class="stat-label">Records modelled</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>Pandas</span>
+          <span>NumPy</span><span>SHAP</span><span>Reinforcement Learning</span><span>SQL</span>
+          <span>Java</span><span>C</span><span>Git</span><span>Jupyter</span>
+          <span>Tailwind CSS</span><span>HTML5</span>
+        </div>
+        <div class="marquee-group">
+          <span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>Pandas</span>
+          <span>NumPy</span><span>SHAP</span><span>Reinforcement Learning</span><span>SQL</span>
+          <span>Java</span><span>C</span><span>Git</span><span>Jupyter</span>
+          <span>Tailwind CSS</span><span>HTML5</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span></span> 01 — About me</p>
+          <h2>Curious about models. <br class="br-wide" />Serious about outcomes.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              I'm Ansh, a final-year B.Tech student in Computer Science &amp; Engineering (AI/ML)
+              at UPES, Dehradun. My work sits at the intersection of applied machine learning
+              and software engineering — I like taking a messy dataset and carrying it all the
+              way to a decision someone can act on.
+            </p>
+            <p>
+              Recently, I built a credit risk assessment system at IBM SkillsBuild, translating
+              XGBoost default probabilities into approve/decline decisions and explaining declines
+              with SHAP. Before that, I designed GHG emission inventories and shipped the frontend
+              for a real-time carbon calculator at Enviraj Consulting.
+            </p>
+            <p>
+              I care about models that are measurable, explainable, and usable by people who
+              don't write code — and I'm always up for a hard dataset.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></svg>
+                <span>Explainable by design</span>
+              </div>
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+                <span>Measured against baselines</span>
+              </div>
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+                <span>Built for real users</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="about-card card-spotlight reveal" style="--d: 120ms">
+            <div class="profile-strip">
+              <div class="monogram" aria-hidden="true">AA</div>
+              <div class="profile-meta">
+                <strong>Ansh Agrawal</strong>
+                <span>AI/ML engineer in training</span>
+              </div>
+            </div>
+            <dl class="facts">
+              <div class="fact">
+                <dt>Degree</dt>
+                <dd>B.Tech CSE (AI/ML)</dd>
+              </div>
+              <div class="fact">
+                <dt>University</dt>
+                <dd>UPES, Dehradun</dd>
+              </div>
+              <div class="fact">
+                <dt>Graduating</dt>
+                <dd>2027 · CGPA 8.09</dd>
+              </div>
+              <div class="fact">
+                <dt>Focus</dt>
+                <dd>Applied ML · RL · XAI</dd>
+              </div>
+              <div class="fact">
+                <dt>Status</dt>
+                <dd><span class="inline-dot" aria-hidden="true"></span> Open to opportunities</dd>
+              </div>
+            </dl>
+            <div class="about-tags">
+              <span>Credit risk</span>
+              <span>Recommender systems</span>
+              <span>Sustainability</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW I WORK ============ -->
+    <section class="section approach-section" id="approach">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span></span> 02 — How I work</p>
+          <h2>From question to<br class="br-wide" /> shipped decision.</h2>
+          <p class="section-sub">
+            The same three-step loop behind every project — whether the dataset has
+            300,000 credit records or 50,000 shopping events.
+          </p>
+        </div>
+
+        <div class="approach-grid">
+          <article class="approach-step reveal">
+            <span class="step-number" aria-hidden="true">01</span>
+            <div class="step-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+            </div>
+            <h3>Frame the decision</h3>
+            <p>
+              Start with the decision someone needs to make, the metric that matters,
+              and the baseline any model has to beat.
+            </p>
+            <span class="step-tag">Problem framing</span>
+          </article>
+
+          <article class="approach-step reveal" style="--d: 90ms">
+            <span class="step-number" aria-hidden="true">02</span>
+            <div class="step-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h10M18 8h2M4 16h4M12 16h8"/><circle cx="16" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></svg>
+            </div>
+            <h3>Engineer the signal</h3>
+            <p>
+              Audit, impute, encode, and validate. Test simple models first so added
+              complexity has to earn its place against a real baseline.
+            </p>
+            <span class="step-tag">Modelling &amp; evaluation</span>
+          </article>
+
+          <article class="approach-step reveal" style="--d: 180ms">
+            <span class="step-number" aria-hidden="true">03</span>
+            <div class="step-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.3 9 9 0 0 1-3.7-.8L3 21l1.9-5.1a8.2 8.2 0 0 1-.9-3.7A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z"/><path d="m8.5 11.5 2 2 4-4"/></svg>
+            </div>
+            <h3>Explain the output</h3>
+            <p>
+              Pair results with SHAP explanations and an interface a non-technical
+              stakeholder can actually use to act on the prediction.
+            </p>
+            <span class="step-tag">Explainability &amp; delivery</span>
+          </article>
+        </div>
+
+        <p class="approach-footnote reveal">
+          Same loop, two very different datasets —
+          <a href="#projects">see how it played out</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span></span> 03 — Technical toolkit</p>
+          <h2>What I build with</h2>
+          <p class="section-sub">
+            A practical stack for moving from raw data to a deployed, explainable result.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card card-spotlight reveal">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3>Programming</h3>
+            <p>Writing clean, efficient code across data and application layers.</p>
+            <div class="tags">
+              <span>Python</span><span>Java</span><span>C</span><span>SQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card card-spotlight reveal" style="--d: 80ms">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+            <p>From feature engineering to model evaluation and explainability.</p>
+            <div class="tags">
+              <span>scikit-learn</span><span>Pandas</span><span>NumPy</span>
+              <span>XGBoost</span><span>SHAP</span><span>Feature Engineering</span>
+              <span>Reinforcement Learning</span><span>Random Forest</span>
+              <span>Logistic Regression</span>
+            </div>
+          </article>
+
+          <article class="skill-card card-spotlight reveal" style="--d: 160ms">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/><circle cx="8" cy="6" r="1.5"/><circle cx="16" cy="12" r="1.5"/><circle cx="14" cy="18" r="1.5"/></svg>
+            </div>
+            <h3>Core Computer Science</h3>
+            <p>The fundamentals behind software that stays reliable as it grows.</p>
+            <div class="tags">
+              <span>OOP</span><span>Data Structures &amp; Algorithms</span>
+              <span>DBMS</span>
+            </div>
+          </article>
+
+          <article class="skill-card card-spotlight reveal" style="--d: 240ms">
+            <div class="skill-icon">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.1 2.1-2.8-2.8 2.2-2.3Z"/></svg>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+            <p>Version control, notebooks, and lightweight frontend delivery.</p>
+            <div class="tags">
+              <span>Git</span><span>GitHub</span><span>Jupyter Notebook</span>
+              <span>VS Code</span><span>HTML5</span><span>Tailwind CSS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span></span> 04 — Experience</p>
+          <h2>Where I've put it to work</h2>
+          <p class="section-sub">
+            Two internships, two very different data problems — both shipped with real stakeholders.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card card-spotlight">
+              <div class="timeline-head">
+                <div class="role-block">
+                  <span class="company-badge" aria-hidden="true">IBM</span>
+                  <div>
+                    <h3>AI/ML Intern</h3>
+                    <p class="company">IBM SkillsBuild</p>
+                  </div>
+                </div>
+                <span class="date">Jun 2026 – Jul 2026</span>
+              </div>
+              <ul class="bullets">
+                <li>Built a credit risk assessment system for underbanked applicants, converting XGBoost default-probability scores into approve/decline decisions with a validation-tuned threshold.</li>
+                <li>Benchmarked against logistic regression and a dummy baseline across 307K+ applicant records — improving test ROC-AUC to <strong>0.769</strong> and lift to <strong>1.90×</strong> over the base default rate.</li>
+                <li>Delivered SHAP-based explanations for decline decisions and an interactive interface for non-technical stakeholders to review risk scores.</li>
+              </ul>
+              <div class="tags">
+                <span>XGBoost</span><span>SHAP</span><span>Model evaluation</span><span>Python</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal" style="--d: 100ms">
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <div class="timeline-card card-spotlight">
+              <div class="timeline-head">
+                <div class="role-block">
+                  <span class="company-badge warm" aria-hidden="true">EC</span>
+                  <div>
+                    <h3>Sustainability Intern</h3>
+                    <p class="company">Enviraj Consulting Pvt. Ltd.</p>
+                  </div>
+                </div>
+                <span class="date">Jun 2025 – Jul 2025</span>
+              </div>
+              <ul class="bullets">
+                <li>Designed GHG emission inventories for clients aligned with IPCC and DEFRA standards.</li>
+                <li>Built the frontend UI of a responsive, real-time carbon calculator using HTML5 and Tailwind CSS.</li>
+                <li>Contributed to GHG Protocol documentation and analyzed Scope 1–3 emissions for reduction strategies.</li>
+              </ul>
+              <div class="tags">
+                <span>GHG Protocol</span><span>HTML5</span><span>Tailwind CSS</span><span>Sustainability</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span></span> 05 — Selected projects</p>
+          <h2>Built end to end,<br class="br-wide" /> measured honestly.</h2>
+          <p class="section-sub">
+            I owned the full pipeline on both: data preparation, modelling, evaluation, and delivery.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card card-spotlight reveal">
+            <div class="project-visual visual-rec" aria-hidden="true">
+              <div class="visual-top">
+                <span class="mono-label">recsys / top-k</span>
+                <span class="pill-live"><span class="live-dot"></span> live ranking</span>
+              </div>
+              <div class="rank-list">
+                <div class="rank-row"><span class="rank-num">01</span><span class="rank-bar" style="--w: 92%"></span><span class="rank-val">0.92</span></div>
+                <div class="rank-row"><span class="rank-num">02</span><span class="rank-bar" style="--w: 79%"></span><span class="rank-val">0.79</span></div>
+                <div class="rank-row"><span class="rank-num">03</span><span class="rank-bar" style="--w: 66%"></span><span class="rank-val">0.66</span></div>
+                <div class="rank-row"><span class="rank-num">04</span><span class="rank-bar" style="--w: 52%"></span><span class="rank-val">0.52</span></div>
+                <div class="rank-row"><span class="rank-num">05</span><span class="rank-bar" style="--w: 41%"></span><span class="rank-val">0.41</span></div>
+              </div>
+              <div class="visual-foot">Precision@5 <strong>+200%</strong> vs. collaborative-filtering baseline</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-index">01</span>
+                <span class="project-kind">Reinforcement learning</span>
+              </div>
+              <h3>Agentic Recommendation System</h3>
+              <p class="project-desc">
+                A session-aware recommender that adapts to behaviour instead of relying only on
+                static item similarity.
+              </p>
+              <ul class="bullets compact">
+                <li>Combined item-item collaborative filtering with ε-greedy multi-armed bandits and Q-learning to adapt recommendations within a session.</li>
+                <li>Sessionized a 50K-event RetailRocket subset and generated Top-K recommendations with cosine similarity.</li>
+                <li>Improved Precision@5 and HitRate@5 by roughly 200% over the collaborative-filtering baseline.</li>
+              </ul>
+
+              <div class="metrics">
+                <div class="metric"><strong>+200%</strong><span>P@5 / HR@5</span></div>
+                <div class="metric"><strong>50K</strong><span>events</span></div>
+                <div class="metric"><strong>3</strong><span>methods fused</span></div>
+              </div>
+
+              <div class="tags">
+                <span>Python</span><span>Pandas</span><span>Q-Learning</span><span>ε-Greedy</span>
+              </div>
+
+              <a class="text-link" href="https://github.com/Ansh-01012005" target="_blank" rel="noopener noreferrer">
+                <span class="sr-only">Agentic Recommendation System — </span>
+                View code on GitHub
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card card-spotlight reveal" style="--d: 120ms">
+            <div class="project-visual visual-water" aria-hidden="true">
+              <div class="visual-top">
+                <span class="mono-label">water_quality / classifier</span>
+                <span class="pill-live"><span class="live-dot teal"></span> 0.94 AUC</span>
+              </div>
+              <div class="water-body">
+                <div class="gauge" style="--val: 88.2">
+                  <div class="gauge-inner">
+                    <strong>88.2%</strong>
+                    <span>accuracy</span>
+                  </div>
+                </div>
+                <div class="feature-bars">
+                  <div class="feature-bar"><span>Manganese</span><span class="bar"><i style="--w: 94%"></i></span></div>
+                  <div class="feature-bar"><span>pH</span><span class="bar"><i style="--w: 82%"></i></span></div>
+                  <div class="feature-bar"><span>Chloride</span><span class="bar"><i style="--w: 68%"></i></span></div>
+                  <p class="feature-note">top predictors · SHAP-ranked</p>
+                </div>
+              </div>
+              <div class="visual-foot"><strong>97.3%</strong> recall on unsafe-water samples</div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-top">
+                <span class="project-index">02</span>
+                <span class="project-kind">Explainable ML</span>
+              </div>
+              <h3>Water Quality Analysis</h3>
+              <p class="project-desc">
+                An explainable classifier that flags unsafe water from 23 chemical features —
+                with the drivers behind each prediction.
+              </p>
+              <ul class="bullets compact">
+                <li>Trained a Random Forest model on 100K+ samples and 23 features, reaching 88.2% accuracy and 97.3% recall.</li>
+                <li>Implemented preprocessing with imputation, MinMax scaling, one-hot encoding, and feature engineering.</li>
+                <li>Identified manganese, pH, and chloride as top predictors, validated by a 0.94 ROC-AUC.</li>
+              </ul>
+
+              <div class="metrics">
+                <div class="metric"><strong>88.2%</strong><span>accuracy</span></div>
+                <div class="metric"><strong>97.3%</strong><span>recall</span></div>
+                <div class="metric"><strong>0.94</strong><span>ROC-AUC</span></div>
+              </div>
+
+              <div class="tags">
+                <span>Python</span><span>scikit-learn</span><span>Pandas</span><span>Random Forest</span>
+              </div>
+
+              <a class="text-link" href="https://github.com/Ansh-01012005" target="_blank" rel="noopener noreferrer">
+                <span class="sr-only">Water Quality Analysis — </span>
+                View code on GitHub
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="github-banner reveal">
+          <div class="gh-mark" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.1-1.5 6.1-6.8a5.3 5.3 0 0 0-1.4-3.7 5 5 0 0 0-.1-3.7s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.4 0C6.2 1.5 5.1 1.8 5.1 1.8a5 5 0 0 0-.1 3.7A5.3 5.3 0 0 0 3.6 9.2c0 5.3 3.1 6.5 6.1 6.8a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+          </div>
+          <div class="gh-copy">
+            <h3>More experiments on GitHub</h3>
+            <p>Follow along with what I'm building next.</p>
+          </div>
+          <a class="btn btn-ghost" href="https://github.com/Ansh-01012005" target="_blank" rel="noopener noreferrer">
+            Visit profile
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow"><span></span> 06 — Education &amp; credentials</p>
+          <h2>The foundation</h2>
+        </div>
+
+        <div class="education-grid">
+          <div class="edu-list">
+            <article class="edu-item reveal">
+              <div class="edu-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+              </div>
+              <div class="edu-body">
+                <span class="date">2023 – 2027</span>
+                <h3>B.Tech — Computer Science &amp; Engineering (AI/ML)</h3>
+                <p>UPES, Dehradun</p>
+                <span class="grade">CGPA 8.09 / 10</span>
+              </div>
+            </article>
+
+            <article class="edu-item reveal" style="--d: 80ms">
+              <div class="edu-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5V6a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2Z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
+              </div>
+              <div class="edu-body">
+                <span class="date">April 2023</span>
+                <h3>Class XII — CBSE</h3>
+                <p>Pragati Vidya Peeth, Gwalior</p>
+              </div>
+            </article>
+
+            <article class="edu-item reveal" style="--d: 160ms">
+              <div class="edu-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5V6a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2Z"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></svg>
+              </div>
+              <div class="edu-body">
+                <span class="date">April 2021</span>
+                <h3>Class X — CBSE</h3>
+                <p>St. John Vianney School, Gwalior</p>
+              </div>
+            </article>
+          </div>
+
+          <aside class="cert-stack">
+            <article class="cert-card card-spotlight reveal" style="--d: 120ms">
+              <div class="cert-icon">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="m8.2 13.2-1.4 8 5.2-3 5.2 3-1.4-8"/></svg>
+              </div>
+              <div>
+                <span class="date">July 2026</span>
+                <h3>AI Tools &amp; ChatGPT Workshop</h3>
+                <p>be10x</p>
+              </div>
+            </article>
+
+            <article class="focus-card reveal" style="--d: 200ms">
+              <p class="mono-label">focus areas</p>
+              <div class="tags">
+                <span>Applied machine learning</span>
+                <span>Reinforcement learning</span>
+                <span>Explainable AI</span>
+                <span>Credit risk</span>
+                <span>Recommender systems</span>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-orb orb-1" aria-hidden="true"></div>
+          <div class="contact-orb orb-2" aria-hidden="true"></div>
+
+          <p class="eyebrow centered"><span></span> 07 — Contact</p>
+          <h2>Let's build something<br class="br-wide" /> that <span class="grad-text">works.</span></h2>
+          <p class="contact-lead">
+            I'm looking for AI/ML internships and 2027 new-grad roles. If you're hiring —
+            or just want to talk models — my inbox is open.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary btn-lg" href="mailto:anshagrawal887@gmail.com">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              anshagrawal887@gmail.com
+            </a>
+            <button class="btn btn-ghost btn-lg" id="copyEmail" type="button" aria-label="Copy email address to clipboard">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copyLabel">Copy email</span>
+            </button>
+            <span class="copy-status" id="copyStatus" role="status" aria-live="polite"></span>
+          </div>
+
+          <div class="contact-meta">
+            <a href="tel:+918839289167">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+              +91 88392 89167
+            </a>
+            <span class="meta-sep" aria-hidden="true"></span>
+            <span class="meta-item">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Dehradun, India
+            </span>
+            <span class="meta-sep" aria-hidden="true"></span>
+            <a href="https://github.com/Ansh-01012005" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <span class="meta-sep" aria-hidden="true"></span>
+            <a href="https://linkedin.com/in/ansh-agrawal01" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">AA</span>
+          <span class="brand-text">Ansh Agrawal</span>
+        </a>
+        <p>
+          Applied ML, reinforcement learning, and explainable AI.
+          Open to 2027 internships and new-grad roles.
+        </p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <span>Explore</span>
+        <a href="#about">About</a>
+        <a href="#approach">How I work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </nav>
+
+      <div class="footer-col">
+        <span>Connect</span>
+        <a href="mailto:anshagrawal887@gmail.com">Email</a>
+        <a href="https://github.com/Ansh-01012005" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/ansh-agrawal01" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="tel:+918839289167">+91 88392 89167</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Ansh Agrawal. All rights reserved.</p>
+      <p class="made">Designed &amp; built from scratch.</p>
+      <a class="back-top" href="#home">
+        Back to top
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
